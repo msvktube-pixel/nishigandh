@@ -1,0 +1,631 @@
+/* ============================= */
+/*       HOSPITAL GALLERY       */
+/* ============================= */
+
+.gallery-section {
+  padding: 80px 6%;
+  background: linear-gradient(135deg, #f4f8fb, #eef6ff);
+  min-height: 100vh;
+}
+
+/* TITLE */
+.gallery-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  color: #0a3d62;
+  letter-spacing: 1px;
+}
+
+/* MASONRY GRID */
+.gallery-masonry {
+  column-count: 3;
+  column-gap: 20px;
+}
+
+/* CARD */
+.gallery-item {
+  break-inside: avoid;
+  margin-bottom: 20px;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+
+/* HOVER EFFECT */
+.gallery-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+/* IMAGE WRAPPER */
+.img-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* IMAGE */
+.img-wrapper img {
+  width: 100%;
+  display: block;
+  transition: transform 0.5s ease;
+  object-fit: cover;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/* LABEL (CLEAR IMAGE NAME) */
+.img-label {
+  padding: 12px 10px;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  background: #ffffff;
+  color: #0a3d62;
+  border-top: 1px solid #eee;
+  letter-spacing: 0.3px;
+}
+
+/* SMALL HOVER COLOR EFFECT */
+.gallery-item:hover .img-label {
+  background: #1dd1a1;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+  .gallery-masonry {
+    column-count: 2;
+  }
+
+  .gallery-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-masonry {
+    column-count: 1;
+  }
+
+  .gallery-title {
+    font-size: 24px;
+  }
+}
+
+/* ===================== */
+/*   MAIN SECTION        */
+/* ===================== */
+
+.gallery-section {
+  padding: 80px 6%;
+  background: linear-gradient(135deg, #f5f7fa, #e8f0ff);
+  min-height: 100vh;
+}
+
+/* TITLE */
+.gallery-title {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 25px;
+  color: #0a3d62;
+}
+
+/* ===================== */
+/* FILTER BUTTONS       */
+/* ===================== */
+
+.filter-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 35px;
+}
+
+.filter-box button {
+  padding: 8px 15px;
+  border: none;
+  background: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.filter-box button:hover {
+  background: #1dd1a1;
+  color: #fff;
+}
+
+.filter-box .active {
+  background: #54a0ff;
+  color: #fff;
+}
+
+/* ===================== */
+/* MASONRY GRID         */
+/* ===================== */
+
+.gallery-masonry {
+  column-count: 3;
+  column-gap: 20px;
+}
+
+/* CARD */
+.gallery-item {
+  break-inside: avoid;
+  margin-bottom: 20px;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-6px);
+}
+
+/* IMAGE */
+.img-wrapper img {
+  width: 100%;
+  display: block;
+  transition: 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.08);
+}
+
+/* LABEL */
+.img-label {
+  padding: 12px;
+  text-align: center;
+  font-weight: 600;
+  color: #0a3d62;
+  border-top: 1px solid #eee;
+}
+
+/* ===================== */
+/* LIGHTBOX             */
+/* ===================== */
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.lightbox-content {
+  text-align: center;
+  color: #fff;
+}
+
+.lightbox-content img {
+  max-width: 80%;
+  max-height: 70vh;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+/* ===================== */
+/* RESPONSIVE           */
+/* ===================== */
+
+@media (max-width: 992px) {
+  .gallery-masonry {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-masonry {
+    column-count: 1;
+  }
+
+  .gallery-title {
+    font-size: 26px;
+  }
+}
+
+/* ===== BASE ===== */
+.gallery {
+  padding: 70px 6%;
+  background: #0b1220; /* DARK PREMIUM BACKGROUND */
+  min-height: 100vh;
+}
+
+/* TITLE */
+.title {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+/* ===== GRID ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+}
+
+/* ===== CARD ===== */
+.card {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  cursor: pointer;
+  transform: scale(1);
+  transition: 0.4s ease;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* IMAGE */
+.card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+/* GLASS OVERLAY */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* ===== MODAL ===== */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.92);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  z-index: 999;
+}
+
+.modal img {
+  max-width: 80%;
+  max-height: 70vh;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+}
+
+.modal h3 {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+
+/* ======================= */
+/* BACKGROUND SECTION     */
+/* ======================= */
+
+.gallery-section {
+  padding: 80px 6%;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #eef6ff, #f7f9fc);
+}
+
+/* TITLE */
+.gallery-heading {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 800;
+  color: #0a3d62;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+/* SUBTITLE */
+.gallery-subheading {
+  text-align: center;
+  color: #666;
+  margin-bottom: 50px;
+  font-size: 15px;
+}
+
+/* ======================= */
+/* GRID LAYOUT            */
+/* ======================= */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* ======================= */
+/* CARD DESIGN            */
+/* ======================= */
+
+.gallery-card {
+  border-radius: 18px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: 0.4s ease;
+  position: relative;
+}
+
+.gallery-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+/* IMAGE BOX */
+.image-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-box img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.08);
+}
+
+/* SHINE EFFECT */
+.shine {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255,255,255,0.25);
+  transform: skewX(-20deg);
+  transition: 0.7s;
+}
+
+.gallery-card:hover .shine {
+  left: 130%;
+}
+
+/* INFO SECTION */
+.info {
+  padding: 14px;
+  text-align: center;
+}
+
+.info h3 {
+  font-size: 16px;
+  color: #0a3d62;
+  font-weight: 600;
+}
+
+/* ======================= */
+/* LIGHTBOX               */
+/* ======================= */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  animation: fade 0.3s ease;
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.lightbox-inner {
+  text-align: center;
+}
+
+.lightbox-inner img {
+  max-width: 85%;
+  max-height: 70vh;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  transform: scale(1);
+}
+
+.lightbox-inner h2 {
+  color: #fff;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+/* ======================= */
+/* RESPONSIVE             */
+/* ======================= */
+
+@media (max-width: 768px) {
+  .gallery-heading {
+    font-size: 28px;
+  }
+
+  .image-box img {
+    height: 200px;
+  }
+}
+
+.doctor-section {
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #eef5ff, #ffffff);
+  text-align: center;
+}
+
+/* HEADER */
+.doctor-header h2 {
+  font-size: 38px;
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+.doctor-header p {
+  color: #64748b;
+  font-size: 16px;
+  margin-bottom: 60px;
+}
+
+/* CARD */
+.doctor-card {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+  border-radius: 25px;
+
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(15px);
+
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  transition: 0.4s;
+}
+
+.doctor-card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+}
+
+/* IMAGE */
+.doctor-img img {
+  width: 260px;
+  border-radius: 20px;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.doctor-card:hover .doctor-img img {
+  transform: scale(1.05);
+}
+
+/* DETAILS */
+.doctor-details {
+  display: flex;                 /* ✅ FIX */
+  flex-direction: column;        /* ✅ FIX */
+  justify-content: center;
+  gap: 10px;                    /* ✅ spacing auto handle */
+  text-align: left;
+}
+
+.doctor-details h3 {
+  font-size: 26px;
+  color: #0f172a;
+  margin-bottom: 5px;
+}
+
+.degree {
+  color: #3b82f6;
+  font-weight: 600;
+}
+
+.desc {
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* EXPERTISE (if added) */
+.expertise {
+  margin-top: 5px;
+  padding: 12px 15px;
+  background: rgba(37, 99, 235, 0.08);
+  border-left: 4px solid #2563eb;
+  border-radius: 8px;
+}
+
+.expertise h4 {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #2563eb;
+}
+
+.expertise p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* BUTTON */
+.btn-appoint {
+  margin-top: 10px;             /* ✅ FIX (main issue solved) */
+  align-self: flex-start;       /* ✅ button left aligned */
+
+  padding: 14px 28px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-appoint:hover {
+  background: linear-gradient(135deg, #2563eb, #4f46e5);
+  transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .doctor-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .doctor-details {
+    text-align: center;
+    align-items: center;       /* ✅ center everything */
+  }
+
+  .doctor-img img {
+    width: 200px;
+  }
+
+  .btn-appoint {
+    align-self: center;        /* ✅ button center on mobile */
+  }
+}
